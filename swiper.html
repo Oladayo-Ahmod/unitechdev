@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>swiper</title>
+	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="swiper.css">
+	<style type="text/css">
+		body{
+			background:#262626;
+			font-family: Helvetica neue, Helvetica,arial,sans-serif;
+			font-size: 14px;
+			
+			margin: 0;
+			padding: 0;
+		}
+		.swiper-container{
+			width: 100%;
+			padding-top: 200px;
+			padding-bottom: 50px;
+		}
+		.swiper-slide{
+			background-position:center;
+			background-size: cover;
+			width: 250px;
+			height: 350px;
+			background:white;
+		}
+		.swiper-slide .image{
+			width: 100%;
+			height: 300px;
+			overflow: hidden;
+		}
+		.swiper-slide .image img{
+			width: 100%;
+		}
+		.swiper-slide .details{
+			box-sizing: border-box;
+			font-size: 20px;
+			padding-top: -20px;
+
+		}
+		.swiper-slide .details h3{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			line-height: 20px;
+
+		}
+		.swiper-slide .details h3 span{
+			font-size: 16px;
+			color: #f44336;
+		}
+	</style>
+</head>
+<body>
+
+                    <div style="width: 94%;background-color: #f3f4f6;border-style:red; margin-left: 3%;margin-right: 3%; padding-top: 20px;padding-bottom: 20px; font-size: 14px;">
+        <div style="background-color: white; border-radius: 10px;padding-left: 15px;padding-right: 15px;margin: 0 auto; width:90%;">
+    <h2 style="text-align: center; padding-top:20px;"><span style="color: red;">Uni</span><span style="color: dodgerblue;">tech</span></h2>
+    <h3 style="text-align: center; color:grey;">We have recieved your message about your project, we shall get back to you sooner.</h3><br>
+    <h3>Below are your project details submitted to us :</h3>
+    <p><?php echo "Brand : " .$brand."."; ?></p>
+    <p><?php echo "Number : " .$number."."; ?></p>
+    <p><?php echo "Business type : " .$business."."; ?></p>
+    <p><?php echo "Project details : " .$message."."; ?></p><br>
+   
+</div><br>
+ <div style="height: 30px; width: 92%; background-color:#f8f8f8; text-align: center; color: grey;border-radius: 15px;margin: 0 3% 0 4%;">
+            <p style="font-style: italic; position: relative;top: 5px;">Thanks for contacting us. We are glad to work with you!</p>
+
+                    </div><br>
+    <footer style="margin: 0 3% 0 4%; width: 90%;height: 50px;border-radius:15px;box-shadow: -20px -20px 20px rgba(255,255,255,0.5),
+                20px 20px 20px rgba(0,0,0,0.05);background-color:white;padding: 10px;">
+                <p style="text-align: center;font-size: 14px;">Copyright &copy; 2020 <span style="text-decoration-color:salmon;color: red;">Unitech</span>All rights reserved</p>
+    </footer>
+</div> 
+	<div class="swiper-container">
+		<div  class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="image">
+				<img src="backimg.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+			<div class="swiper-slide">
+			<div class="image">
+				<img src="newsultan.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="image">
+				<img src="newlogo1.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="image">
+				<img src="imgtwo.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="image">
+				<img src="imgone.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="image">
+				<img src="goal.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="image">
+				<img src="Dynamic.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="image">
+				<img src="desktop.jpg">
+			</div>
+			<div class="details">
+				<h3>sultan design <br><span>graphics designer</span></h3>
+			</div>
+		</div>
+	</div>
+		<!-- pagination-->
+		<div class="swiper-pagination"></div>
+	</div>
+	<script type="text/javascript" src="swiper.min.js"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			effect:'coverflow',
+			spaceBetween : 5,//30
+			grabCursor:true,
+			centeredSlides:true,
+			autoplay: {
+				display:2000,
+				diableOnInteraction: false,
+			},
+			//slidesPerView:'auto',
+			slidesPerView:'auto',
+			coverFlowEffect: {
+				rotate:40,
+				stretch:0,
+				depth:100,
+				modifier:5,
+				slideShadows:true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable:true,
+			},
+			breakpoints : {
+				640:{
+					slidesPerView :2,
+					spaceBetween:10,
+				},
+				768:{
+					slidesPerView :4,
+					spaceBetween:20,
+				},
+				1024:{
+					slidesPerView :5,
+					spaceBetween:10,
+				},
+			}
+		});
+	</script>
+</body>
+</html>
