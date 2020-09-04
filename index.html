@@ -292,7 +292,7 @@
                                                   <button onclick="submit()" class="contact">Contact us</button>
                                                       </div>
                                   <div class="container">
-                         <form id="form" method="POST" action="form.php" enctype="multipart/form-data" class="form-group">
+                         <form id="form" method="POST" action="https://script.google.com/macros/s/AKfycbyqBBNeF9UDe7ROOc_s-c0RBklDXyVnXXyMqA1g/exec" enctype="multipart/form-data" class="gform form-group">
                           <p>Kindly fill the below  form tailoring it to your projects requirement and we shall get back to you ASAP!.We hope to work you soon!</p><br>
                            <label for="name" >Name</label>
                             <input type="text" name="name" placeholder="Enter name" required class="form-control"><br>
@@ -306,6 +306,9 @@
                                 <input type="text" name="business" placeholder="Enter business type" required class="form-control"><br>
                                  <label for="message">Project</label>
                                   <textarea rows="4px" cols="41px" placeholder="including expectations,preference,reference website(if any) etc..." name="message" required class="form-control"></textarea><br>
+                                  <div style="display:none" class="thankyou_message">
+                                   <p class="alert alert-success" role="alert"><em>Thanks</em> for contacting us! We will get back to you soon!</p>
+                                  </div>
                                    <button class="btn btn-primary" name="submit">Submit</button>
                       </form>
                   </div><br>
@@ -342,6 +345,7 @@
               
                                                          
        <script type="text/javascript" src="js/swiper.min.js"></script>
+       <script type="text/javascript" src="js/form-submission-handler.js"></script>
        <script type="text/javascript">
          var swiper = new Swiper('.swipe2', {
           effect:'coverflow',
