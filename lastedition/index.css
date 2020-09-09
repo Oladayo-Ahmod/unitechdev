@@ -1,0 +1,1122 @@
+ 
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	scroll-behavior: smooth;
+	font-family: cursive;
+	overflow-x: hidden;
+	-webkit-background:!important black;
+	-moz-background:!important black;
+	background:!important black;
+}
+/*................loading animation section.............*/
+.outing{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	z-index: 99;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	background-color: black;
+}
+.outer{
+	height: 300px;
+	width: 300px;
+	background: linear-gradient(135deg,#feed07 0%,#FE6A50 5%,#ED00AA 15%,#2FE3FE 50%,#8900FF 100%);
+	border-radius: 10%;
+	animation: rotate 1s ease infinite;
+}
+@keyframes rotate{
+to{
+	transform: rotate(360deg);
+  }
+}
+.inner{
+	position:absolute;
+	width: 275px;
+	height: 275px;
+	text-align: center;
+	line-height: 275px;
+	border-radius: 50%;
+	background:black;
+}
+.inner span{
+	font-size: 30px;
+	background: linear-gradient(135deg,#feed07 0%,#FE6A50 5%,#ED00AA 15%,#2FE3FE 50%,#8900FF 100%);
+	-webkit-background-clip:text;
+	-moz-background-clip:text;
+	background-clip:text;
+	color: transparent;
+	font-family: cursive;
+}
+.header-top{
+
+	position: fixed;
+	overflow: hidden;
+	top: 0; 
+	width: 100%;
+	height:100px;
+	background-color: black;
+	z-index: 2;
+}
+.header-top figcaption{
+	opacity: 0;
+}
+
+div.hamburgers{
+	display: none;
+	position: relative;
+	float: right;
+	width: 25px;
+	top: -100px;
+	left: -30px;
+}
+.hamp{
+	background-color:white;
+	margin: 5px;
+	width: 100%;
+	height: 4px;
+	font-weight: bolder;
+
+}
+
+.navigation{ 
+	position: relative;
+	top: -100px;
+    display:inline-flex;
+    justify-content: space-between;
+    padding-left:400px;
+    align-items: center;
+    align-content: center;
+
+}
+.navigation a{
+	margin: 10px;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	font-weight: bolder;
+}
+.navigation a:hover{
+	transition: 0.5s ease;
+	margin-bottom: 5px;
+	color: red;
+}
+#slidingall{
+	position: relative;
+	display: block;
+	top: 90px;
+	width: 100%;
+	height:570px;
+	background-image: url(backimg.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	margin-bottom: 100px;
+	z-index:1;
+}
+#slidingall h3{
+	text-align: center;
+	position: relative;
+	top: 300px;
+	margin: 10px;
+	font-size: 30px;
+	font-weight: bolder;
+	color: white;
+	text-decoration: none;
+}
+#slidingall hr{
+	text-align: center;
+	position: relative;
+	top: 300px;
+	width: 400px;
+	font-weight: 500px;
+	background: red;
+	left: 5px;
+}
+#slidingall p{
+	text-align: center;
+	position: relative;
+	top: 300px;
+	color: white;
+	font-weight: bold;
+	margin: 10px;
+	font-size: 20px;
+}
+.welcome h3{
+	
+}
+h3{
+	font-size: 15px;
+	margin: 20px;
+	font-color:white;
+	color:white;
+	font-weight: bolder;
+	text-align: center;
+	text-underline-position: under;
+	text-decoration: underline;
+	text-decoration-color: salmon;
+
+}
+#flex-contents{
+	display: flex;
+	margin: 5px;
+	background-color: black;
+	color: white;
+	width: 100%;
+	justify-content:center;
+}
+#flex-contents h3{
+	font-weight: bold;
+}
+#flex-contents div{
+	padding: 5px;
+	width: 300px;
+}
+
+ /*#flex-contents div:nth-child(4) > div */.flex-four #creation div{
+	width: 10px;
+	height: 20px;
+	background-color: red;
+	position: relative;
+	color: white;
+	border-radius: 10px;
+ 	}
+	.flex-four #creating-idea{                            
+ 	color: white;
+ 	font-weight:lighter;
+ 	position: relative; 
+ 	top: 10px;
+ 	left: 
+  	}              
+.image-flexone{
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	max-width: 100%;
+}
+.image-flexone .image-class{
+	width: 305px;
+	height: 305px;
+}
+.image-flexone img{
+	margin: 5px;
+	align-items: center;
+	align-content: center;
+	position: relative;
+}
+.spanfade{
+	opacity: 0;
+	visibility: hidden;
+}
+#imaging{
+	position: relative;
+	top: 5px;
+	display: inline-block;
+	background-color:transparent;
+	color: gray;
+	width: 200px;
+	height: 40px;
+	left: 570px;
+	text-align: center;
+	border: 3px solid red;
+	animation-name: flow;
+	animation-duration: 2s;
+	transition-property: transform;
+	transition-duration: 2s;
+}
+#imaging:hover{
+   transform: rotateY(180deg);
+
+}
+#imaging:hover a{
+	background-color:azure;
+}
+@keyframes flow{
+	0%{
+		opacity:0
+			
+	}
+	30%{
+		opacity: 0.2
+	}
+	40%{
+		opacity: 0.3
+	}
+	50%{
+		opacity: 0.3
+	}
+	70%{
+		opacity: 0.4
+	}
+	80%{
+		opacity: 0.4
+	}
+	90%{
+		opacity: 0.6
+	}
+	100%{
+		opacity:1
+	}
+}
+#togglenow{
+	display: none;
+}
+#about-us{ 
+	background-color: black;
+	padding:10px;
+	z-index: -1;
+}
+#about-us img{
+	height: 200px;
+	width: 200px;
+	border-radius: 30px;
+}
+#writings{
+	width: 600px;
+	position: relative;
+	top: -180px;
+	left: 400px;
+	word-spacing: 3px;
+
+}
+#writings p{
+	color: white;
+}
+#parralax{
+	-webkit-background-clip:text;
+	background-clip:text;
+	-moz-background-clip:text;
+	background-attachment: fixed;
+	height: fit-content;
+	-webkit-height: fit-content;
+	-moz-height: fit-content;
+	text-fill-color:transparent;
+	background:black;
+}
+#parralax h3{
+	color: white;
+}
+#service{
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+	justify-content: center;
+}
+#service figcaption{
+	color: #fff;
+	font-weight: bolder;
+	letter-spacing: 7px;
+	word-spacing: 5px;
+	margin-bottom: 30px;
+}
+.offersone{
+	display: block;
+	width:240px;
+	height: 230px;
+	position: relative;
+
+	padding:5px;
+	margin: 10px;
+}
+.offersone img,.offerstwo img,.offersthree img,.offersfour img{
+	position: relative;
+	align-content: center;
+	align-self: center;
+	border-radius: 20px;
+	left: 15px;
+}
+
+.offerstwo{
+	display: block;
+	width:240px;
+	height: 230px;
+	position: relative;
+	margin: 10px;
+	padding: 5px;
+}
+.offersthree{
+	display: block;
+	width:240px;
+	height: 230px;
+	position: relative;
+	padding:5px;
+	margin: 10px;
+}
+.offersfour{
+	display: block;
+	width:240px;
+	height: 230px;
+	position: relative;
+	padding:5px;
+	margin: 10px;	
+}
+
+div > figcaption{
+	font-size: 10px;
+	margin-left: 180px;
+}
+.graphic{
+	position: relative;
+	left: -130px;
+}
+.brand{
+	position: relative;
+	left: -130px;
+}
+.web{
+	position: relative;
+	left: -135px;
+
+}
+.advert{
+	position: relative;
+	left: -130px;
+}
+.another{
+	height: 250px;
+	width: 240px;
+	padding: 5px;
+	display: none;
+	word-spacing: 10px;
+	background-color:dimgray;
+}
+#one{
+	position: relative;
+	top: -100px;
+	left: 280px;
+	display: none;
+	height: 230px;
+	width: 220px;
+	padding: 5px;
+	word-spacing: 10px;
+	background-color:dimgray;
+}
+#two{
+	position: relative;
+	
+	padding: 5px;
+	display: none;
+	word-spacing: 10px;
+	background-color:dimgray;
+}
+#three{
+	position: relative;
+	padding: 5px;
+	display: none;
+	word-spacing: 10px;
+	background-color:dimgray;
+}
+#four{
+	position: relative;
+	padding: 5px;
+	display: none;
+	word-spacing: 10px;
+	background-color:dimgray;
+}
+.fun-fact{
+	display:flex;
+	font-size: 35px;
+	color: #fff;
+	height: 30vh;
+	background-color:dimgray;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	align-content: center;
+}
+.fun-fact > div{
+	text-align: center;
+	position: relative;
+	left: 120px;
+}
+.fun-fact > span{
+font-size: 12px;
+color: white;
+position: relative;
+top: 30px;
+margin-left: 30px;
+text-align: center;
+font-size: 
+}
+#funny{
+	position: relative;
+	top: 70px;
+	color: white;
+}
+
+#singleqoute{
+	width: 100%;
+	color:white;
+	height:30vh;
+	text-align: center;
+	position: relative;
+	background:black;
+}
+
+#singleqoute > span{
+	width: 80%;
+	top: 30px;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	margin: 10px;
+	position: relative;
+	font-weight: bolder;
+}
+#child{
+	margin-top:40px; 
+	position: relative;
+	text-align: center;
+}
+#singlequote > p{
+	position: relative;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	font-style: italic;
+	top: 40px;
+}
+#testimonial{
+	height: 35vh;
+	top: -30px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+#testimonial div{
+	transition: 1s ease 0.3s;
+	color: white;
+	position: relative;
+	top: 20px;
+	width: 80%;
+	margin: 5% 5%;
+	text-align: center;
+	font-weight: lighter;
+	animation-name: test;
+	animation-duration: 1.5s;
+	text-align: center;
+	font-size: 18px;
+}
+#testimonial span{
+	position: relative;
+	text-align: center;
+	top: -15px;
+	font-size: 16px;
+	color: red;
+	font-style: italic;
+}
+#authors{
+	color: green;
+}
+@keyframes test{
+	0%,20%{
+		color: white;
+	}
+	40%,70%{
+		color: salmon;
+	}
+	80%{
+		color: orange;
+	}
+	100%{
+		color: red;
+	}
+}
+#qoutes{
+	color: white;
+	position: relative;
+	width: 400px;
+	top: 30px;
+	font-size: 25px;
+}
+
+#branding{
+	background-color:black;
+	position: relative;
+	height: 60vh;
+	top: 20px;
+	display: flex;
+	justify-content:space-around;
+	color: white;
+}
+#branding .inform{
+	position: relative;
+	top: 40px;
+}
+#branding .inform h4{
+	font-size: 18px;
+}
+#branding .inform img{
+	position: relative;
+	text-align: right;
+	margin:10px 0 20px 10px;
+	border:2px solid white;
+}
+form{
+	position: relative;
+	top: 40px;
+	width: 400px;
+}
+form input, form textarea{
+	background-color: black !important;
+}
+footer{
+	width: 100%;
+	height: 40px;
+	padding-top: 5px;
+	top: 10px;
+	text-align: center;
+	color: white;
+	display: block;
+	background-color:black;
+	position: relative;
+}
+footer span a{
+	text-decoration: none;
+	color: red;
+}
+@media only screen and (max-width:789px){
+	body{
+		padding: 0;
+		margin: 0;
+		background-color: black;
+		background: black;
+		-moz-background:black;
+		-webkit-background:black;
+		font-size: 14px;
+	}
+
+	div.hamburgers{
+		display: block;
+	}
+.charset .hamp{
+	background-color:red;
+}
+#slidingall{
+	position: relative;
+	display: block;
+	width: 100%;
+	top: 98px;
+	animation-name: ne;
+	animation-duration: 2s;
+}
+#slidingall h3{
+	text-align:left;
+	position: relative;
+	top: 300px;
+	
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	text-shadow: none;
+	margin: 10px;
+	text-decoration: none;
+}
+#slidingall p{
+	text-align: left;
+	width: 85%;
+	position: relative;
+	top: 300px;
+	font-weight: bold;
+	color: white;
+	left: 10px;
+	font-size: 14px;
+}
+#you{
+	position: relative;
+	text-align: left;
+	left: 10px;
+}
+#welcomes{
+	left: 10px;
+	position: relative;
+	text-align: left;
+}
+#sultan{
+	left: 10px;
+	position: relative;
+}
+#slidingall hr{
+	position: relative;
+	top: 300px;
+	width: 230px;
+	font-weight:bolder;
+	background-color: red;
+	color: red;
+	left: -40px;
+	text-align: left;
+}
+.header-top{
+	z-index: 2;
+	background:red; 
+}
+
+.navigation{
+	display: none;
+}
+.navigate{
+	display:block;
+	padding-left: 10px;
+	margin-top: 80px;
+	padding-top: 1px;
+	display: block;
+}
+.navigate a{
+	display: block;
+	margin-top:-15px; 
+	text-decoration: none;
+	color: #fff;
+	font-weight: bolder;
+}
+.navigate hr{
+	opacity: 0; 
+}
+.navigate a:hover, a:active{
+	display: block;
+	transition: 0.5s ease;
+	margin-bottom: 5px;
+	color: red;
+	text-decoration:none;
+
+}
+h3{
+	font-size: 18px;
+	color: white;
+	margin: 10px;
+
+}
+.portfolio{
+	background-color: black;
+}
+
+
+#parralax{
+	background-color: black;
+}
+#parralax h3{
+	color: white;
+}
+.portfolio h3{
+	color: white;
+}
+#flex-contents{
+	margin: 0;
+	position: relative;
+	top: -30px;
+	display: block;
+	background-color: black;
+	color: white;
+	width: 100%;
+	justify-content:center;
+}
+#flex-contents h3{
+	font-weight: bold;
+}
+#flex-contents div{
+	width: 100%;
+	margin: 0;
+}
+#flex-contents div p{
+	width: 80%;
+	margin-left: 10px;
+}
+.flex-four #creating-idea{                            
+ 	color: white;
+ 	font-weight:lighter;
+ 	position: relative; 
+ 	top: 10px;
+ 	left: 
+  	}              
+
+.spanfade{
+	opacity: 0;
+	visibility: hidden;
+}
+/*#flex-contents div{
+	text-align:left;
+	word-spacing: 1px;
+}
+*/
+
+
+.hover-icon{
+	width: 305px;
+	display: flex;
+	z-index: 1;
+	position: relative;
+	top: -200px;
+	display: none;
+	transition: 1s ease;
+	justify-content: center;
+}
+.hover-icon a{
+	width: 30px;
+	transition: 1s ease;
+	height: 30px;
+	margin: 10px;
+
+}
+.image-flexone{
+	background-color: white;
+	width: 100%;
+	display: block;
+	padding: 0 10px 0 10px;
+}
+.image-flexone img{
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding:
+}
+
+.image-flexone img:hover{
+	box-shadow: inset -3px -3px 5px #ffffff70,
+				inset 3px 3px 15px #00000070;
+	transition: 1s ease;
+}
+#imaging{
+	position: relative;
+	top: 5px;
+	left: 85px;
+	margin-bottom: 40px;
+	display: inline-block;
+	color: white;
+	width: 200px;
+	font-weight: bolder;
+	height: 40px;
+	border: 1.5px solid salmon;
+	animation-name: flow;
+	animation-duration: 2s;
+	transition-property: transform;
+	transition-duration: 2s;
+}
+#about-us{
+	background-color: black;
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+#about-us img{
+	margin-left: 15px;
+	height: 150px;
+	width: 150px;
+	border-radius: 10px;
+}
+#writings{
+	max-width: 100%;
+	position: relative;
+	top: 10px;
+	font-size: 14px;
+	left: 0;
+	right: 0;
+	background-color: black;
+	color: white;
+	padding:0;
+	word-spacing: 0px;
+	letter-spacing: 0px;
+
+}
+#writings p{
+	width: 85%;
+	color: white;
+	padding-left: 10px;
+	text-align: left;
+}
+#service{
+	max-width:100%;
+	padding:0;
+	align-items: center;
+	align-content: center;
+	display: block;
+	background-color: black;
+}
+#service figcaption{
+	color: #fff;
+	text-decoration: underline;
+	text-decoration-color: red;
+	text-align: center;
+	position: relative;
+	top: -250px;
+	width: 200px;
+	margin:0 auto;
+	align-self: center;
+	left: -0;
+	letter-spacing: 0;
+	word-spacing: 0;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.offersone{
+	display: block;
+	width:60%;
+	top: 30px;
+	height: 230px;
+	position: relative;
+	left: 60px;
+	padding:5px;
+	margin-bottom: 20px;
+}
+.offersone img,.offerstwo img,.offersthree img,.offersfour img{
+	position: relative;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	left: -0px;
+	border-radius: 20%;
+}
+.offerstwo{
+	display: block;
+	width:60%;
+	top: 80px;
+	height: 230px;
+	position: relative;
+	left: 60px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+.offersthree{
+	display: block;
+	width:60%;
+	top: 110px;
+	height: 230px;
+	position: relative;
+	left: 60px;
+	padding:5px;
+	margin-bottom: 20px;
+}
+.offersfour{
+	display: block;
+	width:60%;
+	top: 160px;
+	height: 230px;
+	position: relative;
+	left: 60px;
+	padding:5px;
+	margin-bottom: 20px;	
+}
+.brand{
+	position: relative;
+	left: -140px;
+	font-size: 35px;
+	top: -300px;
+	text-decoration-color: red;
+	text-decoration: underline;
+	font-weight: bolder;
+}
+.bran{
+	position: relative;
+	left: -140px;
+}
+.web{
+	position: relative;
+	left: -150px;
+
+}
+.advert{
+	position: relative;
+	left: -150px;
+}
+.fun-fact{
+	height:85vh;
+	position: relative;
+	top: 150px;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	display: block;
+}
+.fun-fact > div{
+	position: relative;
+	text-align: center;
+	top: 20px; 
+	width: 60%;
+	left: 50px;
+	color: white;
+	margin: 20px;
+	font-size: 40px;
+	font-weight: bolder;
+	margin-top: 30px;
+}
+
+.fun-fact > span{
+font-size: 14px;
+color: white;
+position: relative;
+top: 1px;
+width: 60%;
+text-align: center;
+left: 1px;
+margin: 0;
+font-size: 14px;
+}
+#funny{
+	position: relative;
+	top: 185px;
+	bottom: 20px;
+	font-size: 20px;;
+	font-color:white;
+	color:white;
+	font-weight: bolder;
+	text-align: center;
+	text-underline-position: under;
+	text-decoration: underline;
+	text-decoration-color: salmon;
+
+}
+#singleqoute{
+	color: white;
+	width: 100%;
+	top: 150px;
+
+	position: relative;
+	
+}
+#singleqoute > span{
+	max-width: 80%;
+	top: 30px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	font-weight: bolder;
+}
+#singleqoute p{
+	font-size: 12px;
+	position: relative;
+	font-weight: bold;
+	text-align: center;
+	top: 40px;
+	color:red;
+}
+#child{
+	margin-top:40px; 
+	position: relative;
+	left: -15px;
+}
+#testimonial{
+	height: 55vh;
+	top: 120px;
+	width: 100%;
+	background-color:black;
+	color: white;
+	font-size: 15px;
+	position: relative;
+}
+#testimonial h3{
+	margin-bottom: 70px;
+}
+#testimonial div{
+	color: white;
+	width: 90%;
+	position: relative;
+	top: -10px;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 14px;
+}
+#testimonial span{
+	position: relative;
+	text-align: center;
+	top: -10px;
+	font-size: 12px;
+	color: red;
+	font-style: italic;
+}
+
+#qoutee{
+	color: white;
+	position: relative;
+	width: 400px;
+	top: 30px;
+	left: -200px;
+	font-size: 20px;
+}
+#branding{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	font-size: 14px;
+	height: 100vh;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom:0;
+	width: 100%;
+	color: white;
+}
+#brand-h3{
+	margin-top: 150px;
+	color: white;
+	background-color: black;
+}
+#branding .inform{
+	width: 100%;
+	top: 10px;
+}
+#branding form{
+	top: 10px;
+	width: 100%;
+}
+#branding h3{
+	position: relative;
+	
+	text-align: center;
+}
+.inform{
+	position: relative;
+	
+}
+footer{
+	top: 0;
+	margin: 0;
+	height: fit-content;
+	-webkit-height: fit-content;
+	-moz-height: fit-content;
+}
+.header-top{
+	background-color:black;
+	height: 110px;
+	animation-duration: 1.5s;
+	transition: 1s ease;
+}
+.header-top img{
+	position: relative;
+	top: -5px;
+}
+.header-top figcaption{
+	opacity: 0;
+}
+
+.header-toggle{
+	background-color: black;
+	height: 420px;
+	transition: 1s ease;
+}
+.outer{
+      height: 100px;
+      width: 100px;
+      background: linear-gradient(135deg,#feed07 0%,#FE6A50 5%,#ED00AA 15%,#2FE3FE 50%,#8900FF 100%);
+      border-radius: 10%;
+      animation: rotate 1s ease infinite;*/
+      }
+.inner{
+      position:absolute;
+width: 75px;
+height: 75px;
+text-align: center;
+line-height: 75px;
+border-radius: 50%;
+background:black;
+}
+.inner span{
+font-size: 16px;
+}
+
+
+}
