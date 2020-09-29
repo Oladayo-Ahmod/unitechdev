@@ -409,7 +409,7 @@ header{
 	width: 100%;
 	
 }
-header h3{
+header h1{
 	z-index: 1;
 	opacity: 1;
 	text-align: center;
@@ -417,10 +417,9 @@ header h3{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	font-weight: bold;
 	margin: 0 auto;
 	position: absolute;
-	top:60px;
+	top:55px;
 }
 header button{
 	z-index: 1;
@@ -1252,8 +1251,9 @@ background-color: black;
 		font-weight:bold;
 	}
 	
-	header h3{
-		font-size: 16px;
+	header h1{
+		top: 60px;
+		font-size: 20px;
 	}
 	header button{
 		width: 110px;
@@ -1434,6 +1434,9 @@ h2{
 }
 .more{
 display: none;	
+}
+.all video{
+	display: none;
 }
 .swiper-container{
 	margin-left: 0;
