@@ -21,6 +21,8 @@
     <title>VTG Pharmaceutical Store</title>
 </head>
 <body>
+            <!--preloading animation-->
+            <div id="preloader"></div>
             <header>
                 <!-- navbar begins-->
                 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -507,6 +509,14 @@
                     <script src="js/form-submission-handler.js"></script>
                      <!-- Initialize Swiper -->
   <script>
+    //preloading animation
+   window.addEventListener('DOMContentLoaded', function() {
+ const loader = document.querySelector('#preloader');
+ preloader.className = 'hidden';
+ preloader.style.display = "none";
+ preloader.style.visibility ="hidden";
+  
+  });
       /* service slide*/
     var swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
